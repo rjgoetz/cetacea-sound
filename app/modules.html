@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>modules - home</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <h1>Modules Page</h1>
+
+    <div class="css-module">
+      <h2>.search-bar</h2>
+      <img class="sample-image" src="modules/search-bar.gif" alt="Search Bar">
+
+      <!--Start .search-bar-->
+      <aside class="search-bar"> 
+        <form method="get" action="/search/results.php" id="cse-search-box"> 
+          <input id="entry" type="text" name="q" value="Search Site" onfocus="if(this.value == this.defaultValue) this.value = ''">
+          <input id="search-btn" type="submit" name="sa" value="">
+        </form>
+      </aside>
+      <!--End .search-bar-->
+    </div>
+
+    <div class="css-module">
+      <h2>.page-header</h2>
+      <img class="sample-image" src="modules/page-header.gif" alt="Page Header">
+
+      <!--Begin Page Header-->
+      <header>
+        <h1><a href="index.html">Cetacea Sound Corp - Simple Audio by Design</a></h1>
+        <nav>
+          <ul>
+            <li>Products
+              <ul>
+                <li><a href="#">Classroom Audio</a></li>
+                <li>Audio Systems</li>
+                <li><a href="#">Astronaut</a></li>
+                <li><a href="#">Ensemble</a></li>
+                <li><a href="#">Power &amp; Cabling</a></li>
+                <li>Wireless Microphones</li>
+                <li><a href="#">Orbiter</a></li>
+              </ul>
+            </li>
+            <li>Support
+              <ul>
+                <li><a href="#">Product Support</a></li>
+                <li>Literature</li>
+                <li><a href="#">In English</a></li>
+                <li><a href="#">In Spanish</a></li>
+                <li><a href="#">In French</a></li>
+              </ul>
+            </li>
+            <li>Company
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">News Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Media Resources</a></li>
+              </ul>
+            </li>
+            <li>Dealers
+              <ul>
+                <li><a href="#">Dealer Information</a></li>
+                <li><a href="#">Find a Dealer</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--End Page Header-->
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

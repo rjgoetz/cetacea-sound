@@ -1,0 +1,16 @@
+// _search-bar.scss
+
+.search-bar {
+	background: #0093D9;
+	width: 100%;
+	form {
+		float: right;
+		
+		text-transform: uppercase;
+		p {
+		background: $black;
+		float: left;
+		}
+	}
+	@include clearfix;
+}

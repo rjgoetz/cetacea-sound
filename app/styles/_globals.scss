@@ -1,2 +1,14 @@
 // _globals.scss
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	width: 960 / 16 * 1em;
+	margin: 0 auto;
+	font: 1em/1.4 $font-stack-sans; 
+}

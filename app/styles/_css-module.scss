@@ -1,12 +1,5 @@
 // _css-module.scss
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 .css-module {
 	margin-bottom: 6em;
 	&> h2 {
