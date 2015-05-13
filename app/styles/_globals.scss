@@ -18,10 +18,17 @@ html {
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: SourceSansPro;
+	scr: url('../fonts/SourceSansPro-Light.otf');
+	font-weight: 100;
+}
+
 body {
 	width: 960 / 16 * 1em;
 	margin: 0 auto;
-	font: 1em/1.4 $font-stack-sans; 
+	font: 1em/1.4 $font-stack-sans;
+	color: $black; 
 }
 
 ul {

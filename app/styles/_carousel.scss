@@ -1,0 +1,50 @@
+// _carousel.scss
+
+.carousel {	
+	h2 {
+		@include visuallyhidden;
+	}
+	article {
+		height: 434 / 16 * 1em;
+		background: url('../images/CS3.1-Home-ORB-0515-D.jpg') no-repeat;
+		position: relative;
+		h3 {
+			padding: 1rem;
+			font-size: 2.75em;
+			font-weight: 100;
+			color: $blue-dark;
+			span {
+				display: block;
+				text-transform: uppercase;
+				font-size: 1.58rem;
+				font-weight: bold;
+				color: $black;
+			}
+		}
+		ul {
+			font-size: 1.25em;
+			position: absolute;
+			left: 20rem;
+			top: 13rem;
+			list-style-type: square;
+			line-height: 2;
+			font-weight: bold;
+		}
+		h4 {
+			font-size: 1.3em;
+			color: $white;
+			position: absolute;
+			margin: 0;
+			bottom: 0.4rem;
+			right: 1rem;
+			text-transform: uppercase;
+		}
+		a {
+			position: absolute;
+			display: block;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
