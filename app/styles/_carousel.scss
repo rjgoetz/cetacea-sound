@@ -1,18 +1,20 @@
 // _carousel.scss
 
-.carousel {	
+.carousel {
 	h2 {
 		@include visuallyhidden;
 	}
 	article {
 		height: 434 / 16 * 1em;
-		background: url('../images/CS3.1-Home-ORB-0515-D.jpg') no-repeat;
+		width: 960 / 16 * 1em;
+		background:	url('../images/CS3.1-Home-ORB-0515-D.jpg') no-repeat;
 		position: relative;
 		h3 {
-			padding: 1rem;
+			margin: 0;
+			padding: 1rem 0 0 2rem;
 			font-size: 2.75em;
-			font-weight: 100;
 			color: $blue-dark;
+			font-weight: 100;
 			span {
 				display: block;
 				text-transform: uppercase;
