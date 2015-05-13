@@ -7,6 +7,17 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+	font-family: SourceSansPro;
+	src: url('../fonts/SourceSansPro-Regular.otf');
+}
+
+@font-face {
+	font-family: SourceSansPro;
+	src: url('../fonts/SourceSansPro-Semibold.otf');
+	font-weight: bold;
+}
+
 body {
 	width: 960 / 16 * 1em;
 	margin: 0 auto;
