@@ -24,6 +24,12 @@ html {
 	font-weight: 100;
 }
 
+@font-face {
+	font-family: SourceSansPro;
+	src: url('../fonts/SourceSansPro-RegularIt.otf');
+	font-style: italic;
+}
+
 body {
 	font: 1em/1.4 $font-stack-sans;
 	color: $black;
@@ -36,8 +42,13 @@ body {
 	background: $white;
 }
 
-ul {
+ul, ol {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+main {
+	@include clearfix;
+	padding: 0 2em;
 }

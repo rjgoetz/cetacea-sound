@@ -1,0 +1,26 @@
+// _home-intro.scss
+
+.home-intro {
+	h2 {
+		text-transform: uppercase;
+		color: $blue-dark;
+	}
+	p {
+		color: $blue-bright;
+		font-style: italic;
+		margin: 0 0 0.5em 0;
+	}
+	li {
+		margin: 1em 0;
+	}
+	span {
+		font-size: 0.9em;
+		line-height: 1;
+		padding: 0.25em 0.5em;
+		display: inline-block;
+		border-radius: 100%;
+		background: $blue-bright;
+		color: $white;
+		margin-right: 0.5em;
+	}
+}
