@@ -28,6 +28,7 @@
 			color: $black;
 		}
 		ul ul {
+			z-index: 100;
 			position: absolute;
 			left: 0;
 			width: 12em;
