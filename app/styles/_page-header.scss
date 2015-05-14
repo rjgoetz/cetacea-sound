@@ -19,79 +19,74 @@
 	}
 	nav {
 		float: left;
-		margin: 2.5em 0 0 8em;
+		margin: 2em 0 0 7em;
 		a {
 			display: block;
 			padding: 0.5em;
 			text-transform: none;
 			text-decoration: none;
+			font-weight: 100;
 			color: $black;
+			line-height: 0.8;
+			&:hover {
+				color: $blue-bright;
+			}
 		}
 		ul ul {
-			z-index: 100;
-			position: absolute;
-			left: 0;
-			width: 12em;
+			z-index: 2;
+			width: 13em;
 			background: $white;
+			/*border: 1px solid $blue-bright;*/
+			border-bottom: 5px solid $blue-bright;
+			border-left: 1px solid $blue-bright;
+			display: none;
+			padding-bottom: .75em;
+			box-shadow: 5px 0 3px $grey;
 			& li:first-child {
 				padding-top: 1em;
 			}
 		}
 		.nav-category {
 			float: left;
-			position: relative;
-			overflow: hidden;
-			padding: 0 2em 0 0.5em;
+			line-height: 1;		
 			text-transform: uppercase;
 			color: $blue-dark;
-			&:hover {
-				overflow: initial;
+			padding-right: 1.5em;
+			position: relative;
+			border: 1px solid $white;
+			border-bottom: none;
+			span {
+				display: block;
+				margin: 0.5em 0.5em 0.75em 0.5em;
 			}
-		}		
+			&:hover:nth-of-type(1), &:hover:nth-of-type(2), &:hover:nth-of-type(3) {
+				/*border: 1px solid $blue-bright;
+				border-bottom: 5px solid $white;*/
+				border-left: 1px solid $blue-bright;
+				box-shadow: 5px 0 5px $grey;
+				ul {
+					display: initial;
+					position: absolute;
+					left: -1px;
+				}			
+			}
+			&:hover:last-of-type {
+				/*border: 1px solid $blue-bright;*/
+				border-left: 1px solid $blue-bright;
+				box-shadow: 5px 0 5px $grey;
+				z-index: 2;
+				ul {
+					display: initial;
+					position: absolute;
+					right: -1px;
+				}			
+			}								
+		}	
 		.nav-break {
 			font-weight: bold;
-			border-top: 1px solid $dark-grey;
-			padding: 0.5em;
-			text-transform: none;
+			padding: 1em 0.5em 0.5em 0.5em;
+			color: $black;
 		}
 	}
 	@include clearfix;
 }
-
-/*
-nav {
-	background: #eee;
-	border-bottom: 2px solid #999;
-	}
-	nav li {
-		list-style-type: none;
-	}
-	nav a {
-		display: block;
-		color: green;
-		text-decoration: none;		
-		padding: .5em 1em;
-		}
-		nav a:hover {
-			background: #666;
-			color: #fff;
-			}
-			nav ul ul {	
-				position: absolute;
-				left: 0px;	
-				background: #eee;
-				}
-				nav li li a {
-					min-width: 6em;
-					border-top: 2px solid #ccc;
-				}
-
-.nav-lv1 {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	vertical-align: bottom;
-	}
-	.nav-lv1:hover {
-		overflow: initial;
-	}*/
