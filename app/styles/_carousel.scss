@@ -1,8 +1,8 @@
 // _carousel.scss
 
 .carousel {
-	padding: 0 2em;
-	background: url('../images/banner-grad-bottom.jpg') 0 25.4em no-repeat;
+	padding: 0 2em 1em 2em;
+	background: url('../images/banner-grad-bottom.jpg') bottom center no-repeat;
 	h2 {
 		@include visuallyhidden;
 	}
