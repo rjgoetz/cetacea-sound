@@ -8,12 +8,15 @@
   width: 33.3333%;
 }
 
+.col2-3 {
+  width: 66.6666%;
+}
+
 .col1-4 {
   width: 25%;
 }
 
 *.row {
-  padding-top: 2em;
   &:after {
     @include clearfix;
   }
