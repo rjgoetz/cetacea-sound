@@ -20,11 +20,8 @@
   &:after {
     @include clearfix;
   }
-  &:last-of-type {
-    padding-bottom: 2em;
-  }
 }
 
-article[class*='col'] {
+article[class*='col'], div[class*='col'], ul[class*='col'], p[class*='col'] {
   float: left;
 }

@@ -1,0 +1,65 @@
+// _page-footer.scss
+
+.page-footer {
+	background: $grey;
+	font-size: 0.85em;
+	h2 {
+		margin: 0;
+		width: 330 / 32 * 1rem;
+		img {
+			width: 100%;
+		}
+		a {
+			@include visuallyhidden;
+		}
+	}
+	.wrapper {
+		background: $grey;
+		padding-top: 1rem;
+		.row:first-of-type {
+			margin-top: 0.5rem;
+			ul {
+				li {
+					float: left;
+					border-right: 1px solid $black;
+					padding: 0 0.5rem;
+					line-height: 1;
+				}
+				&:first-of-type {
+					li:last-of-type {
+						border-right: none;
+					}
+					li:first-of-type {
+						padding-left: 0;
+					}
+				}
+				&:last-of-type {
+					li {
+						float: right;
+						&:first-of-type {
+							border-right: none;
+							padding-right: 0;
+						}
+					}
+				}		
+			}
+		}		
+		.row:last-of-type {
+			p {
+				margin: 1rem 0;
+				&:last-of-type {
+					text-align: right;
+				}
+			}			
+			img {
+				margin-left: 0.5rem;
+			}
+		}
+	}
+	a {
+		color: $blue-dark;
+		&:hover {
+			color: $blue-bright;
+		}
+	}
+}
