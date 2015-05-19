@@ -128,16 +128,18 @@
         <img class="sample-image" src="modules/home-intro.gif" alt="Home Introduction">
 
         <!--Begin Home Intro-->
-        <main>        
-          <article class="home-intro col2-3">
-            <h2>High Performance Classroom Speaker &amp; Microphone Systems</h2>
-            <p>Why Cetacea Sound?</p>
-            <ol>
-              <li><span>1</span>Innovative classroom audio products designed and manufactured in the U.S.A.</li>
-              <li><span>2</span>Emphasis on installation simplicity and low total cost of ownership</li>
-              <li><span>3</span>Focus on pristine vocal clarity for enhanced student learning</li>
-            </ol> 
-          </article>
+        <main>
+          <div class="row">       
+            <article class="home-intro col2-3">
+              <h2>High Performance Classroom Speaker &amp; Microphone Systems</h2>
+              <p>Why Cetacea Sound?</p>
+              <ol>
+                <li><span>1</span>Innovative classroom audio products designed and manufactured in the U.S.A.</li>
+                <li><span>2</span>Emphasis on installation simplicity and low total cost of ownership</li>
+                <li><span>3</span>Focus on pristine vocal clarity for enhanced student learning</li>
+              </ol> 
+            </article>
+          </div>
         </main>       
         <!--End Home Intro-->
       </div>
@@ -147,11 +149,13 @@
         <img class="sample-image" src="modules/home-video.gif" alt="Home Video">
 
         <!--Begin Home Video-->
-        <article class="home-video col1-3">            
-          <h3>Watch the Video</h3>
-          
-          <p><span>Astronaut&trade;</span>Ceiling Speaker System</p>
-        </article> 
+        <div class="row">
+          <article class="home-video col1-3">
+            <video></video>
+            <h3>Watch the Video</h3>
+            <p><span>Astronaut&trade;</span>Ceiling Speaker System</p>
+          </article>
+        </div>
         <!--End Home Video-->
       </div>
 
@@ -161,20 +165,20 @@
 
         <!--Start Promos Section-->
           <main>
-            <div class="home-promos"> 
+            <div class="home-promos row"> 
               <article class="col1-3">
                 <h3>Astronaut</h3>
-                <img src="images/astro-promo.jpg" alt="Astronaut ceiling speaker system">
+                <a href="#"><img src="images/astro-promo.jpg" alt="Astronaut ceiling speaker system"></a>
                 <p>Ceiling Speaker System for <span>Projectors, Whiteboards, and More</span></p>
               </article>
               <article class="col1-3">
                 <h3>Ensemble</h3>
-                <img src="images/ensemble-promo.jpg" alt="Ensemble portable speaker system">
+                <a href="#"><img src="images/ensemble-promo.jpg" alt="Ensemble portable speaker system"></a>
                 <p>Portable Speaker System</p>
               </article>
               <article class="col1-3">
                 <h3>Orbiter</h3>
-                <img src="images/orbiter-promo.jpg" alt="Orbiter wireless teacher microphone">
+                <a href="#"><img src="images/orbiter-promo.jpg" alt="Orbiter wireless teacher microphone"></a>
                 <p>Wireless Teacher Microphone</p>
               </article>
             </div>
@@ -188,23 +192,25 @@
 
         <!--Start Page Footer-->
         <footer class="page-footer">
-          <h2><img src="images/cs-logo.jpg" alt="Cetacea Sound logo"><a href="index.html">Cetacea Sound Corp</a></h2>
-          <div class="col1-2">
-            <ul>
-              <li><a href="#">Find a Dealer</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Site Map</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-            <p>&copy; 2015 Cetacea Sound Corp. All rights reserved.</p>
-          </div>
-          <div class="col1-2">
-            <ul>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p>All audio products are proudly made in the U.S.A.<img src="images/" alt=""></p>
+          <div class="wrapper">
+            <h2><img src="images/cs-logo.jpg" alt="Cetacea Sound logo"><a href="index.html">Cetacea Sound Corp</a></h2>        
+            <div class="row">
+              <ul class="col1-2">
+                <li><a href="#">Find a Dealer</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+              <ul class="col1-2">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>            
+              </ul>          
+            </div>
+            <div class="row">          
+              <p class="col1-2">&copy; 2015 Cetacea Sound Corp. All rights reserved.</p>
+              <p class="col1-2">All audio products are proudly made in the U.S.A.<img src="images/footer-flag.png" alt=""></p>
+            </div>
           </div>          
         </footer>
         <!--End Page Footer-->
