@@ -4,17 +4,17 @@
 	text-align: center;
 	padding: 2em 0;
 	h3 {
+		margin: 0.5rem 0;
 		text-transform: uppercase;
 		color: $blue-dark;
 		font-weight: 100;
-		border-top: 1px solid $grey;
-		border-bottom: 1px solid $grey;
+		padding: 0.25rem 0;		
+		background: url('../images/promo-line.jpg') no-repeat top center, url('../images/promo-line.jpg') no-repeat bottom center;
 	}
 	p {
 		margin: 0;
+		padding-bottom: 0.5rem;
 		font-size: 0.9em;
-		span {
-			display: block;
-		}
+		text-transform: uppercase;
 	}
 }
