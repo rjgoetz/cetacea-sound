@@ -38,11 +38,17 @@
         <img class="sample-image" src="modules/search-bar.gif" alt="Search Bar">
 
         <!--Start .search-bar-->
-        <aside class="search-bar"> 
-          <form method="get" action="/search/results.php" id="cse-search-box"> 
-            <input id="entry" type="text" name="q" value="Search Site" onfocus="if(this.value == this.defaultValue) this.value = ''">
-            <input id="search-btn" type="submit" name="sa" value="">
-          </form>
+        <aside class="search-bar">
+          <div class="wrapper">
+            <form action="search.html" class="searchform" id="searchbox_012722875503578063664:xq0pnigqzco">
+              <div>
+                <input value="012722875503578063664:xq0pnigqzco" name="cx" type="hidden">
+                <input value="FORID:XX" name="cof" type="hidden">
+                <input type="text" placeholder="search site..." name="q" class="search-text">
+                <input type="submit" name="sa" class="searchsubmit" value="">
+              </div>
+            </form>
+          </div>
         </aside>
         <!--End .search-bar-->
       </div>
@@ -203,7 +209,10 @@
         <!--Start Page Footer-->
         <footer class="page-footer">
           <div class="wrapper">
-            <h2><img src="images/cs-logo.jpg" alt="Cetacea Sound logo"><a href="index.html">Cetacea Sound Corp</a></h2>        
+            <div class="footer-logo">
+              <h2>Cetacea Sound Corp</h2>
+              <a href="#"></a>
+            </div>
             <div class="row">
               <ul class="col1-2">
                 <li><a href="#">Find a Dealer</a></li>
