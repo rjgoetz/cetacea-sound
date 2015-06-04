@@ -16,6 +16,14 @@
   width: 25%;
 }
 
+.col1-5 {
+	width: 20%;
+}
+
+.col4-5 {
+	width: 80%;
+}
+
 *.row {
   &:after {
     @include clearfix;

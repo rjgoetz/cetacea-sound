@@ -31,7 +31,7 @@ html {
 }
 
 body {
-	font: 1em/1.4 $font-stack-sans;
+	font: 1em/1.6 $font-stack-sans;
 	color: $black;
 	background: url('../images/cetacea-bg.jpg'); 
 }
@@ -54,4 +54,18 @@ a {
 
 main {	
 	padding: 2em;
+	.page-content {
+		padding-left: 4em;
+		h2 {
+			line-height: 1;
+			margin-top: 1rem;
+			color: $blue-bright;
+		}
+		h3 {
+			color: $blue-bright;
+			text-transform: uppercase;
+			line-height: 1;
+			margin-top: 2rem;
+		}
+	}
 }

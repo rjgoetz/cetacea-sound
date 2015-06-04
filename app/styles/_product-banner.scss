@@ -1,0 +1,22 @@
+// _product-banner.scss
+
+.product-banner {
+	position: relative;
+	background: url('../images/banner-grad-bottom.jpg') bottom center no-repeat;	
+	padding-bottom: 1em;
+	h1 {
+		position: absolute;
+		margin: 0;
+		padding-left: 2rem;
+		top: 2rem;
+		color: $blue-bright;
+		font-size: 3em;
+		line-height: 1;
+		span {
+			font-size: 2.25rem;
+			display: block;
+			color: $black;
+			padding-top: 0.5rem;
+		}
+	}
+}
