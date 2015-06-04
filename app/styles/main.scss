@@ -7,10 +7,17 @@
 
 // modules
 @import "css-module";
+
+// global pages
 @import "search-bar";
 @import "page-header";
+@import "page-footer";
+
+// home page
 @import "carousel";
 @import "home-intro";
 @import "home-video";
 @import "home-promos";
-@import "page-footer";
+
+// product page
+@import "left-nav";

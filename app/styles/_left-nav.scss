@@ -1,0 +1,28 @@
+// _left-nav.scss
+
+.left-nav {
+	background: -webkit-linear-gradient($blue-bright, $blue-dark); /* For Safari 5.1 to 6.0 */
+ 	background: -o-linear-gradient($blue-bright, $blue-dark); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient($blue-bright, $blue-dark); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient($blue-bright, $blue-dark); /* Standard syntax */
+  	color: $white;
+	padding: 1rem;
+	li {
+		line-height: 2;
+		&:first-of-type {
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			text-align: center;
+			border-bottom: 4px solid $white;
+			line-height: 1;
+			padding-bottom: 0.6rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+  	a {
+  		color: $white;
+  		&:hover {
+  			color: $blue-light;
+  		}
+  	}
+}
