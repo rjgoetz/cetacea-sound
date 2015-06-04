@@ -1,6 +1,7 @@
 // _home-intro.scss
 
 .home-intro {
+	padding-right: 5em;
 	h2 {
 		text-transform: uppercase;
 		color: $blue-dark;
@@ -14,7 +15,13 @@
 	li {
 		margin: 1em 0;
 	}
-	span {
+	ol {
+		position: relative;
+		padding-left: 2em;
+	}
+	.blue-bullet {
+		position: absolute;
+		left: 0;
 		font-size: 0.9em;
 		line-height: 1;
 		padding: 0.25em 0.5em;

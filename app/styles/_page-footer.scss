@@ -2,13 +2,14 @@
 
 .page-footer {
 	background: $grey;
-	font-size: 0.85em;		
+	font-size: 0.85em;
+	padding-top: 1em;		
 	.wrapper {
 		background: $grey;
 		padding-top: 1rem;
 		.footer-logo {
 			margin: 0;
-			margin-bottom: 1rem;
+			margin-bottom: 1.5rem;
 			width: 161 / 16 * 1rem;
 			height: 29 / 16 * 1rem;
 			background: url('../images/CS-logo_footer.png') no-repeat;
