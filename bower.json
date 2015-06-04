@@ -11,6 +11,7 @@
     "videogular-poster": "~1.2.1",
     "videogular-controls": "~1.2.1",
     "videogular-overlay-play": "~1.2.1",
-    "videogular-buffering": "~1.2.1"
+    "angular": "~1.4.0",
+    "angular-sanitize": "~1.4.0"
   }
 }
