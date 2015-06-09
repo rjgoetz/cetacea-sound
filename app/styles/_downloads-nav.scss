@@ -3,7 +3,8 @@
 .downloads-nav {
 	margin-top: 1em;
 	background: $grey;
-	padding: 1rem;
+	padding: 1em;
+
 	&> li {
 		font-weight: bold;
 		margin-bottom: 1rem;
@@ -11,6 +12,9 @@
 			color: $blue-dark;
 			text-transform: uppercase;
 			font-weight: bold;
+			ul {
+				margin-top: 0.5rem;
+			}
 		}
 	}
 	ul li {

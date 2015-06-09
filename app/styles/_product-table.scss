@@ -1,0 +1,27 @@
+// _product-table.scss
+
+.product-table {
+	border: 5px solid $blue-light;
+	margin-top: 2em;
+	thead, tbody, th, tr, td {
+		border: 1px solid $blue-light;
+	}
+	thead {
+		background: $blue-bright;
+		color: $white;
+		text-transform: uppercase;
+		font-size: 1.2em;
+	}
+	tbody th {
+		background: $grey;
+		padding: 0.5em;
+		text-transform: uppercase;
+	}
+	tbody td {
+		padding: 0.5em;
+		text-align: center;
+		&:first-of-type {
+			text-align: left;
+		}
+	}
+}

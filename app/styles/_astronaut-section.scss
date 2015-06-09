@@ -11,27 +11,31 @@
 }
 
 .astro-applications {
-	padding-left: 5rem;
+	padding-left: 6rem;
 	margin-bottom: 2rem;	
 }
 
 .projector {
-	background: url('../images/projector.jpg') no-repeat left center;
+	background: url('../images/astronaut/projector.png') no-repeat left center;
 }
 
 .voice {
-	background: url('../images/voice-amplification.jpg') no-repeat left center;
+	background: url('../images/astronaut/voice-amp.png') no-repeat left center;
 }
 
 .multimedia {
-	background: url('../images/multimedia.jpg') no-repeat left center;
+	background: url('../images/astronaut/multimedia.png') no-repeat left center;
 }
 
 .group-listening {
-	background: url('../images/360.jpg') no-repeat left center;
+	background: url('../images/astronaut/360-group.png') no-repeat left center;
 }
 
-.astro-system {	
+.astro-system {
+	a {
+		display: block;
+		margin-bottom: 1.75rem;
+	}	
 	span {
 		display: block;
 		font-style: italic;
@@ -39,4 +43,30 @@
 		padding-top: 0.5rem;
 		padding-bottom: 1rem;
 	}
+}
+
+.features {
+	ul {
+		list-style-type: square;
+		list-style-position: outside;
+		margin-left: 1rem;
+		li {
+			margin-bottom: 0.75rem;
+		}
+	}
+}
+
+.astro-xl {
+	p {
+		padding-right: 12em;
+		padding-bottom: 1em;
+	}
+}
+
+.sixty {
+	background: url('../images/astronaut/icon-60w.jpg') no-repeat right center;
+}
+
+.multimedia-xl {
+	background: url('../images/astronaut/icon-multimedia.jpg') no-repeat right center;
 }

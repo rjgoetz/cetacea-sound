@@ -1,0 +1,21 @@
+// _product-gallery.scss
+
+.product-gallery {
+	margin: 1em 1em 0 2em;
+	height: 475 / 16 * 1em;	
+	background: url('../../images/banner-grad-bottom.jpg') bottom center no-repeat;
+	h1, h2 {
+		@include visuallyhidden;
+	}
+	img {
+		width: 100%;
+		display: block;
+		padding: 0 0 1em 1em;
+	}
+	article:first-of-type {
+		border-right: 1px solid $grey;
+		img {
+			padding: 0;
+		}
+	}
+}
