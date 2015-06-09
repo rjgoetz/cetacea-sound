@@ -24,12 +24,18 @@
 	width: 80%;
 }
 
+article[class*='col'], div[class*='col'], ul[class*='col'], p[class*='col'] {
+  float: left;
+  padding-right: 1rem;
+}
+
 *.row {
   &:after {
     @include clearfix;
   }
+  div[class*='col']:last-of-type {
+    padding: 0 0 0 1rem;
+  }
 }
 
-article[class*='col'], div[class*='col'], ul[class*='col'], p[class*='col'] {
-  float: left;
-}
+

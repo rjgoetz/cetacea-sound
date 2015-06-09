@@ -7,7 +7,7 @@
     <title>Ceiling-mounted classroom and projector speaker system - Astronaut | Cetacea Sound</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
+    <!-- build:css ../styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
     <link rel="stylesheet" href="../bower_components/videogular-themes-default/videogular.css" />
@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="../bower_components/owl-carousel2/dist/assets/owl.theme.default.min.css" />
     <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
+    <!-- build:css ../styles/main.css -->
     <link rel="stylesheet" href="../styles/main.css">
     <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
+    <!-- build:js ../scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
@@ -94,11 +94,41 @@
       <!--End Page Header-->
 
       <!--Start Product banner-->
-      <article class="product-banner">
+      <!--<article class="product-banner">
         <h1>Astronaut<span>Classroom Speaker System</span></h1>
         <a href="index.html"><img src="../images/banner-orbiter.jpg" alt="Astronaut installed on room ceiling"></a>
-      </article>
-      <!--End Product Banner-->     
+      </article>-->
+      <!--End Product Banner-->
+
+      <!--Start Astronaut Video-->
+      <div class="row">
+        <article class="astronaut-video">            
+          <div ng-app="myApp">
+            <div ng-controller="HomeCtrl as controller" class="videogular-container">
+              <videogular vg-theme="controller.config.theme.url">
+                <vg-media vg-src="controller.config.sources"
+                          vg-tracks="controller.config.tracks">
+                </vg-media>
+                <vg-controls vg-autohide="true" vg-autohide-time="3000">
+                  <vg-play-pause-button></vg-play-pause-button>
+                  <vg-time-display></vg-time-display>
+                  <vg-scrub-bar>
+                      <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                  </vg-scrub-bar>                        
+                  <vg-time-display></vg-time-display>
+                  <vg-volume>
+                      <vg-mute-button></vg-mute-button>
+                      <vg-volume-bar></vg-volume-bar>
+                  </vg-volume>
+                  <vg-fullscreen-button></vg-fullscreen-button>
+                </vg-controls>
+                <vg-poster vg-url='controller.config.plugins.poster'></vg-poster>
+              </videogular>
+            </div>
+          </div>
+        </article>
+      </div>
+      <!--End Astronaut Video-->     
 
       <!--Start Main Page Content-->
       <main>        
@@ -141,25 +171,74 @@
           <article class="page-content col4-5">
             <h2>The Simple Solution to High-Performance Classroom Sound</h2>
             <p>The Astronaut speaker system, distinguished by its elegant, circular design, is built from the ground up for classroom and projector sound enhancement. Mounted to the ceiling, its patented omni-directional acoustics ensure an even soundfield throughout the room. Combined with the most simple installation on the market, the Astronaut promises cost-effectiveness and superior performance.</p>
-            <h3>Applications</h3>
-            <div class="astro-applications projector">
-              <h4>Projector Sound Enhancement</h4>
-              <p>The Astronaut speaker transforms basic projector sound into full, classroom-wide audio required for high-impact presentations and enhanced classroom learning.</p>
-            </div>
-            <div class="astro-applications voice">
-              <h4>Voice Amplification</h4>
-              <p>The Astronaut is the only classroom speaker system that is pre-equalized for voice range, ensuring maximum speech intelligibility for improved student comprehension and learning.</p>
-            </div>
-            <div class="astro-applications multimedia">
-              <h4>Multimedia Lessons</h4>
-              <p>Connecting technology peripherals is simple with the built-in 3-channel mixer. From DVD's to whiteboards, the Astronaut ensures that every multimedia lesson is heard clearly.</p>
-            </div>
-            <div class="astro-applications group">
-              <h4>360&deg; Group Listening</h4>
-              <p>The Astronaut is ideal for group listening because of its patented 360° acoustics. This technology enables everyone to hear correct sound regardless of where they are seated.</p>
+
+            <div class="row">
+              <h3>Applications</h3>
+              <div class="astro-applications projector">
+                <h4>Projector Sound Enhancement</h4>
+                <p>The Astronaut speaker transforms basic projector sound into full, classroom-wide audio required for high-impact presentations and enhanced classroom learning.</p>
+              </div>
+              <div class="astro-applications voice">
+                <h4>Voice Amplification</h4>
+                <p>The Astronaut is the only classroom speaker system that is pre-equalized for voice range, ensuring maximum speech intelligibility for improved student comprehension and learning.</p>
+              </div>
+              <div class="astro-applications multimedia">
+                <h4>Multimedia Lessons</h4>
+                <p>Connecting technology peripherals is simple with the built-in 3-channel mixer. From DVD's to whiteboards, the Astronaut ensures that every multimedia lesson is heard clearly.</p>
+              </div>
+              <div class="astro-applications group-listening">
+                <h4>360&deg; Group Listening</h4>
+                <p>The Astronaut is ideal for group listening because of its patented 360° acoustics. This technology enables everyone to hear correct sound regardless of where they are seated.</p>
+              </div>
             </div>
 
+            <div class="row">
+              <h3>Systems</h3>
+              <div class="astro-system col1-2">
+                <a href="cl/index.html"><img src="../images/astronaut-cl-sm.jpg" alt="Astronaut CL speaker system small"></a>
+                <h4>Astronaut CL<span>Total Classroom Sound Enhancement</span></h4>
+                <p>40 watts of classroom-wide sound enhancement. The choice for standard-sized classrooms and basic voice and multimedia instruction.</p>
+              </div>
+              <div class="astro-system col1-2">
+                <a href="xl/index.html"><img src="../images/astronaut-xl-sm.jpg" alt="Astronaut XL speaker system small"></a>
+                <h4>Astronaut XL<span>Audio for the Most Demanding Classroom</span></h4>
+                <p>Powerful, 60 watts of full-range audio for multimedia depth. The XL is for larger classrooms, cafetoriums, and computer labs.</p>
+              </div>
+            </div>
 
+            <div class="row">              
+              <h3>Improved Student Learning</h3>
+              <div class="col1-2">
+                <p>Astronaut speakers set the standard for speech intelligibility and word recognition in the classroom. Our patented audio designs have improved training and presentations for 15 years.</p>
+                <p><a href="#">Learn more about Astronaut technology.</a></p>
+              </div>
+              <div class="col1-2">
+                <img src="../images/astronaut/learning-student.jpg" alt="Student hearing and comprehending instruction">
+              </div>
+            </div>
+
+            <div class="row">              
+              <h3>Simple and Secure Installation</h3>
+              <div class="col1-2">
+                <p>The included bracket allows quick and easy mounting to the ceiling. </p>
+                <p><a href="#">Learn more about installing the Astronaut.</a></p>
+              </div>
+              <div class="col1-2">
+                <img src="../images/astronaut/installation.jpg" alt="Astronaut installation illustration">
+              </div>
+            </div>
+
+            <div class="row">              
+              <h3>Save Green with Green Technology</h3>
+              <div class="col1-2">
+                <p>The Astronaut uses 75% less energy consumption than traditional in-ceiling speakers with better performance and no sacrifice in loudness.</p>
+                <p><a href="#">Learn more about our energy-efficient design.</a></p>
+              </div>
+              <div class="col1-2">
+                <img src="../images/astronaut/logos-energy-efficient.jpg" alt="Astronaut installation illustration">
+              </div>
+            </div>
+            
           </article>
         </div>
 
@@ -210,7 +289,7 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <!-- build:js scripts/vendor.js -->
+    <!-- build:js ../scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/angular/angular.js"></script>
@@ -223,7 +302,7 @@
     <script src="../bower_components/owl-carousel2/dist/owl.carousel.min.js"></script>
     <!-- endbuild -->
 
-        <!-- build:js scripts/main.js -->
+        <!-- build:js ../scripts/main.js -->
         <script src="../scripts/main.js"></script>
         <!-- endbuild -->
 </body>

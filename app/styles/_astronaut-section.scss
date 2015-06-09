@@ -1,0 +1,42 @@
+// _astronaut-section.scss
+
+.astronaut-video {
+	padding: 0 2em;
+	.videogular-container {
+	    width: 100%;
+	    height: 504 / 16 * 1em;	    
+	    margin: auto;
+	    overflow: hidden;
+	}		
+}
+
+.astro-applications {
+	padding-left: 5rem;
+	margin-bottom: 2rem;	
+}
+
+.projector {
+	background: url('../images/projector.jpg') no-repeat left center;
+}
+
+.voice {
+	background: url('../images/voice-amplification.jpg') no-repeat left center;
+}
+
+.multimedia {
+	background: url('../images/multimedia.jpg') no-repeat left center;
+}
+
+.group-listening {
+	background: url('../images/360.jpg') no-repeat left center;
+}
+
+.astro-system {	
+	span {
+		display: block;
+		font-style: italic;
+		font-weight: normal;
+		padding-top: 0.5rem;
+		padding-bottom: 1rem;
+	}
+}

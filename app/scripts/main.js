@@ -25,7 +25,7 @@ angular.module('myApp',
             this.config = {
                 preload: 'none',
                 sources: [
-                    {src: $sce.trustAsResourceUrl('../videos/astronaut_final.mp4'), type: 'video/mp4'},
+                    {src: $sce.trustAsResourceUrl('../videos/astronaut_final.mp4', 'videos/astronaut_final.mp4'), type: 'video/mp4'},
                     {src: $sce.trustAsResourceUrl('../videos/astronaut_final.webm'), type: 'video/webm'},
                     {src: $sce.trustAsResourceUrl('../videos/astronaut_final.ogg'), type: 'video/ogg'}
                 ],
